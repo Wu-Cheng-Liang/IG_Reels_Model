@@ -16,9 +16,9 @@ from scipy.optimize import differential_evolution, minimize
 # =========================
 # USER CONFIG
 # =========================
-DYNAMIC_CSV = Path("/Users/jimwu/Desktop/Bass_Model/Reels Data/reels_dynamic_info.csv")
-STATIC_CSV = Path("/Users/jimwu/Desktop/Bass_Model/Reels Data/reels_static_info.csv")
-OUTPUT_ROOT = Path("/Users/jimwu/Desktop/Bass_Model/Output")
+DYNAMIC_CSV = Path("Reels_Data/reels_dynamic_info.csv")
+STATIC_CSV = Path("Reels_Data/reels_static_info.csv")
+OUTPUT_ROOT = Path("Output")
 
 # "posted after 4/10"
 POST_TIME_CUTOFF = pd.Timestamp("2026-04-10 23:59:59")

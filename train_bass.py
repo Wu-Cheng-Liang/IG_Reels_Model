@@ -21,7 +21,7 @@ STATIC_CSV = Path("Reels_Data/reels_static_info.csv")
 OUTPUT_ROOT = Path("Output")
 
 # "posted after 4/10"
-POST_TIME_CUTOFF = pd.Timestamp("2026-04-10 23:59:59")
+POST_TIME_CUTOFF = pd.Timestamp("2026-04-09 23:59:59")
 
 MAX_REELS = 20
 MIN_OBS = 3

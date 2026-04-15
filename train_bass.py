@@ -5,12 +5,12 @@ Batch fixed-M Bass training for multiple Instagram Reels.
 Inputs
 ------
 Dynamic:
-  /Users/jimwu/Desktop/Bass_Model/Reels Data/reels_dynamic_info.csv
+  Reels_Data/reels_dynamic_info.csv
   Expected columns:
     reels_shortcode,views,plays,likes,comments,timestamp
 
 Static:
-  /Users/jimwu/Desktop/Bass_Model/Reels Data/reels_static_info.csv
+  Reels_Data/reels_static_info.csv
   Expected columns:
     kol_account,reels_shortcode,post_time,duration,caption
 
@@ -24,7 +24,7 @@ Selection rules
 Outputs
 -------
 For each reel:
-  /Users/jimwu/Desktop/Bass_Model/Output/<reels_shortcode>/
+  Output/<reels_shortcode>/
     - observed_vs_fit.csv
     - 30d_projection.csv
     - effective_M.csv
@@ -34,7 +34,7 @@ For each reel:
     - effective_M_log.png
 
 Global outputs:
-  /Users/jimwu/Desktop/Bass_Model/Output/
+  Output/
     - selected_reels.csv
     - training_summary.csv
     - training_errors.csv
@@ -57,9 +57,9 @@ from scipy.optimize import differential_evolution, minimize
 # =========================
 # USER CONFIG
 # =========================
-DYNAMIC_CSV = Path("/Users/jimwu/Desktop/Bass_Model/Reels Data/reels_dynamic_info.csv")
-STATIC_CSV = Path("/Users/jimwu/Desktop/Bass_Model/Reels Data/reels_static_info.csv")
-OUTPUT_ROOT = Path("/Users/jimwu/Desktop/Bass_Model/Output")
+DYNAMIC_CSV = Path("Reels_Data/reels_dynamic_info.csv")
+STATIC_CSV = Path("Reels_Data/reels_static_info.csv")
+OUTPUT_ROOT = Path("Output")
 
 # Interpreted as posted on/after 2026-04-10.
 # If you want strictly after 4/10, change ">=" logic below to ">".

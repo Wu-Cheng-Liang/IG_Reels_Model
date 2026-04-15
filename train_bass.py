@@ -160,8 +160,8 @@ def fit_fixed_bass(
     ymax = float(np.max(y))
 
     bounds = [
-        (1e-8, 5.0),                 # p
-        (1e-8, 5.0),                 # q
+        (1e-8, 1.0),                 # p
+        (1e-8, 1.0),                 # q
         (ymax * 1.001, ymax * 100.0) # M
     ]
 

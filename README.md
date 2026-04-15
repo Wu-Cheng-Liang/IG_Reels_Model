@@ -1,5 +1,3 @@
-Stable batch Bass fitting for Instagram Reels with p, q constrained to (0, 1).
-
 Inputs
 ------
 Dynamic:

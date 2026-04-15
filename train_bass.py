@@ -133,7 +133,7 @@ def fixed_bass_objective(
     """
     p, q, M = theta
 
-    if p <= 0 or q <= 0 or p > 5 or q > 5:
+    if p <= 0 or q <= 0 or p > 1 or q > 1:
         return 1e12
     if M <= np.max(y):
         return 1e12
